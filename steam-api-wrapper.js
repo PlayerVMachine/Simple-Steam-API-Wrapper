@@ -425,12 +425,6 @@ const getAssetUrl = async (app, hash) => {
     return f(`%s%s/%s.jpg`, assetBaseURL, appID, hash)
 }
 
-async function test () {
-    let result = await getNewsForApp('FAR: Lone Sails', 4, 300)
-    console.dir(result, {depth: 4})
-}
-test()
-
 module.exports = {
     assetBaseURL,
     communityStatsURL,
